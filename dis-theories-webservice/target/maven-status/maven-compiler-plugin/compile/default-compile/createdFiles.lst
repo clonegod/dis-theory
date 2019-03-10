@@ -1,0 +1,11 @@
+clonegod\wsclient\generated\SayHelloImpl.class
+clonegod\wsclient\generated\SayHelloResponse.class
+clonegod\rmi\ws\jaxws\client\WSClient.class
+clonegod\rmi\ws\jaxws\ISayHello.class
+clonegod\wsclient\generated\package-info.class
+clonegod\wsclient\generated\SayHelloImplService.class
+clonegod\rmi\ws\jaxws\Bootstrap.class
+clonegod\wsclient\generated\SayHello.class
+clonegod\rmi\ws\jaxws\client\WSClient2.class
+clonegod\rmi\ws\jaxws\SayHelloImpl.class
+clonegod\wsclient\generated\ObjectFactory.class
