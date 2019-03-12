@@ -18,7 +18,11 @@ As the ability of arbitrary querying is not as important as the availability, de
 由于任意查询的能力不如可用性那么重要，分布式数据存储的设计者以牺牲一致性为代价增加了可用性。
 
 
-# [CAP 的三个特征] (https://en.wikipedia.org/wiki/CAP_theorem)
+# CAP 的三个特征
+https://en.wikipedia.org/wiki/CAP_theorem
+
+注：CAP理论主要针对分布式存储数据库而言的。
+
 In theoretical computer science, the CAP theorem, states that it is impossible for a `distributed data store` to simultaneously provide more than two out of the following three guarantees:
 
 ### Consistency 一致性
