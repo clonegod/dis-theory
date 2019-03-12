@@ -24,12 +24,12 @@ In theoretical computer science, the CAP theorem, states that it is impossible f
 ### Consistency 一致性
 Every read receives the most recent write or an error。
 
-指的是对任意客户端，都能随时查询到最新写入的数据。
+指的是任意连接到分布式存储的客户端，都能随时查询到最新写入的数据。
 
 ### Availability 可用性
 Every request receives a (non-error) response – without the guarantee that it contains the most recent write
 
-指的是客户端想分布式存储系统发送的每个请求，都能收到正常的响应结果 - 不保证服务端返回的是最新的数据。
+指的是客户端向分布式存储系统发送的每个请求，都能（在一定时间范围内）收到正常的响应结果 - 但是不保证服务端返回的是最新的数据。
 
 ### Partition tolerance 分区容忍性
 The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes
