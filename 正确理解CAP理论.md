@@ -18,7 +18,7 @@ As the ability of arbitrary querying is not as important as the availability, de
 由于任意查询的能力不如可用性那么重要，分布式数据存储的设计者以牺牲一致性为代价增加了可用性。
 
 
-# CAP 的三个特征
+# [CAP 的三个特征] (https://en.wikipedia.org/wiki/CAP_theorem)
 In theoretical computer science, the CAP theorem, states that it is impossible for a `distributed data store` to simultaneously provide more than two out of the following three guarantees:
 
 ### Consistency 一致性
@@ -55,3 +55,15 @@ When choosing availability over consistency, the system will always process the 
 
 当选择可用性而非一致性时，系统将始终处理查询并尝试返回最新的可用信息版本，即使由于网络分区而无法保证其是最新的。
 
+
+CAP is frequently misunderstood as if one has to choose to abandon one of the three guarantees at all times. 
+
+CAP 经常被误解为必须始终选择放弃三种保证中的一种。
+
+In fact, the choice is really between consistency and availability only when a network partition or failure happens; at all other times, no trade-off has to be made.
+
+实际上，只有在发生网络分区或故障时，才需要在一致性和可用性之间进行选择; 在所有其他时间（没有网络分区），不需要进行任何权衡。
+
+Database systems designed with traditional ACID guarantees in mind such as RDBMS choose consistency over availability, whereas systems designed around the BASE philosophy, common in the NoSQL movement for example, choose availability over consistency.
+
+传统ACID设计的数据库系统，例如RDBMS选择一致性而非可用性，而围绕BASE理念设计的系统通常选择可用性而不是一致性（例如常见的NoSQL数据库）。
