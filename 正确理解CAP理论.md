@@ -45,7 +45,7 @@ No distributed system is safe from network failures, thus network partitioning g
 
 In the presence of a partition, one is then left with two options: consistency or availability. 
 
-当发生网络分区，只能在一致性和可用性中选择一种。
+##### 当发生网络分区，只能在一致性和可用性中选择一种。
 
 When choosing consistency over availability, the system will return an error or a time-out if particular information cannot be guaranteed to be up to date due to network partitioning. 
 
