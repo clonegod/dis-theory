@@ -28,7 +28,7 @@ In theoretical computer science, the CAP theorem, states that it is impossible f
 ### Consistency 一致性
 Every read receives the most recent write or an error。
 
-指的是任意连接到分布式存储的客户端，都能随时查询到最新写入的数据。
+针对分布式存储数据库进行查询，要么查询到最新写入的数据，要么查询报错。
 
 ### Availability 可用性
 Every request receives a (non-error) response – without the guarantee that it contains the most recent write
